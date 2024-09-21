@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+}
+
+.container {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3eae3;
+}
+
+.img-section {
+  width: 270px;
+  height: 420px;
+}
+
+.img-section .desktop {
+  border-radius: 15px 0 0 15px;
+  width: 100%;
+  height: 100%;
+}
+
+img.mobile {
+  display: none;
+}
+
+.component {
+  width: 270px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 0 15px 15px 0;
+  padding: 30px;
+}
+
+.component span {
+  color: #8b8c91;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.component h1 {
+  padding: 20px 0;
+  color: #192024;
+  opacity: 85%;
+}
+
+.component p {
+  color: #8b8e96;
+  font-size: 14px;
+  padding-bottom: 25px;
+  line-height: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card p strong {
+  color: #3a8267;
+  font-size: 32px;
+  font-family: Nerko One;
+}
+
+.card p:nth-child(2) {
+  padding-right: 20px;
+}
+
+#btn {
+  background-color: #3d8168;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 55px;
+}
+
+#btn:hover {
+  background-color: #1a4031;
+}
+
+#btn p {
+  padding: 0;
+  padding-left: 10px;
+  color: #fff;
+  font-style: 20px;
+}
+
+@media screen {
+}
+@media screen and (max-width: 576px) {
+  .container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-section {
+    width: 90%;
+    height: 420px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  img.desktop {
+    display: none;
+  }
+  img.mobile {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .component {
+    width: 90%;
+    /* height: 420px; */
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #btn {
+    width: 53%;
+    position: absolute;
+    left: 23%;
+    bottom: 35px;
+    font-size: 18px;
+  }
+
+  #btn p{
+    font-size: 20px;
+  }
+}
