@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-  background-color: #fff;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -96,12 +95,11 @@ img.mobile {
   font-style: 20px;
 }
 
-@media screen {
-}
 @media screen and (max-width: 576px) {
   .container {
     display: block;
     margin: 0 auto;
+    height: 100%;
   }
 
   .img-section {
@@ -137,7 +135,28 @@ img.mobile {
     font-size: 18px;
   }
 
-  #btn p{
+  #btn p {
     font-size: 20px;
   }
+}
+
+@media screen and (max-width: 370px){
+    .container{
+        padding-bottom:30px ;
+    }
+    .component {
+        width: 90%;
+        height: 500px;
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        margin: 0 auto;
+        position: relative;
+      }
+      #btn {
+        width: 80%;
+        position: absolute;
+        left: 32px;
+        bottom: 35px;
+        font-size: 14px;
+      }
 }
