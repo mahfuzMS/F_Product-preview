@@ -100,6 +100,7 @@ img.mobile {
     display: block;
     margin: 0 auto;
     height: 100%;
+    padding-bottom: 30px;
   }
 
   .img-section {
@@ -142,7 +143,7 @@ img.mobile {
 
 @media screen and (max-width: 370px){
     .container{
-        padding-bottom:30px ;
+        padding-bottom: 30px;
     }
     .component {
         width: 90%;
